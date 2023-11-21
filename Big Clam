@@ -1,0 +1,52 @@
+!pip install snap-stanford
+import networkx as nx
+import snap
+
+top_1000_nodes_file_path = r"D:\Downloads\SMA\Meghana filter\Top_1000_Nodes.txt"
+edge_pairs_file_path = r"D:\Downloads\SMA\Meghana filter\Filtered_Edge_Pairs.txt"
+
+
+
+def read_graph(edge_file):
+    # Create a new graph
+    graph = snap.TUNGraph.New()
+
+    # Read edges from file
+    with open(edge_file, 'r') as file:
+        for line in file:
+            src, dst = map(int, line.strip().split())
+            if not graph.IsNode(src):
+                graph.AddNode(src)
+            if not graph.IsNode(dst):
+                graph.AddNode(dst)
+            graph.AddEdge(src, dst)
+
+    return graph
+
+def apply_bigclam(graph, num_communities, output_file_path):
+    # Apply the BigClam community detection algorithm
+    CmtyV = snap.TCnComV()
+    modularity = snap.CommunityCNM(graph, CmtyV)
+    print(len(CmtyV))
+
+    # Open a file to write communities to
+    with open(output_file_path, 'w') as outfile:
+        for Cmty in CmtyV:
+            # Create a list of node IDs in the community
+            community_nodes = [str(NI) for NI in Cmty]
+            # Write the community to the file
+            outfile.write("\t".join(community_nodes) + "\n")
+
+    print("The modularity of the network is %f" % modularity)
+
+# Path to your dataset file
+edge_file_path = r"D:\Downloads\SMA\Meghana filter\Filtered_Edge_Pairs.txt"  # Replace with the path to your file
+output_file_path = r"D:\Downloads\SMA\Meghana filter\Big Clam Output.txt"  # Replace with your desired output file path
+
+# Read the graph from the edge list
+G = read_graph(edge_file_path)
+
+# Apply BigClam
+# You need to specify the number of communities you expect in the network
+num_communities = 120  # Replace with your expected number of communities
+apply_bigclam(G, num_communities, output_file_path)
