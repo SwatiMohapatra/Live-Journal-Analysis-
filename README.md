@@ -51,4 +51,4 @@ Social Media Analysis Project
 ├─ Visualization.json 
 ```
 ## Visualization
-To visualize the graph of filtered edges you can open [Visualization.json](https://github.com/SwatiMohapatra/Live-Journal-Analysis-/blob/main/Visualization.json) file using [Palladio].(https://hdlab.stanford.edu/palladio)
+To visualize the graph of filtered edges you can open [Visualization.json](https://github.com/SwatiMohapatra/Live-Journal-Analysis-/blob/main/Visualization.json) file using [Palladio](https://hdlab.stanford.edu/palladio).
