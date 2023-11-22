@@ -15,6 +15,7 @@ Social Media Analysis Project
 │
 ├─ Jaccard_Similarity.ipynb
 ├─ Node_filtering.ipynb
+├─ Filtered_community_Code.ipynb
 │
 │
 ├─ Data
