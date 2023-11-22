@@ -9,7 +9,8 @@ Social Media Analysis Project
 ├─ Milestone 1
 │  └─ Group 4 Project Visualizations.ipynb
 │
-│   (Milestone 2)
+│
+│   (Milestone 2 Begins Below)
 │
 │
 ├─ Jaccard_Similarity.ipynb
@@ -31,8 +32,14 @@ Social Media Analysis Project
 │  ├─ Disjoint Algorithms
 │  │  ├─ Fast_Greedy_Algo.ipynb
 │  │  └─ Girvan-Newman.ipynb
+│  │
 │  ├─ Output
 │  │  └─ Big Clam Output.txt
+│  │  ├─ Clique_communities.txt
+│  │  ├─ GenPerm_communities.txt
+│  │  ├─ lpa_communities.txt
+│  │  └─ slpa_communities.txt
+│  │
 │  └─ Overlapping Algorithms
 │     ├─ Big Clam Algorithm.ipynb
 │     ├─ GenPerm Algorithm.ipynb
