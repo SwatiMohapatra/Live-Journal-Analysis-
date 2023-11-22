@@ -48,5 +48,5 @@ Social Media Analysis Project
 │     ├─ Label_Propagation.ipynb
 │     └─ Speaker-Listener Label Propagation Algorithm.ipynb
 │
-├─ Visualization.json
+├─ Visualization.json (You can visualize the graph of filtered edges using [Palladio](https://hdlab.stanford.edu/palladio/)https://hdlab.stanford.edu/palladio/.)
 ```
