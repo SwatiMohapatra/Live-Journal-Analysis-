@@ -1,2 +1,2 @@
-# Live-Journal-Analysis-
+# Live-Journal-Analysis
 Social Media Analysis Project
