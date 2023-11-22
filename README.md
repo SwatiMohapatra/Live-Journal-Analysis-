@@ -41,9 +41,9 @@ Social Media Analysis Project
 │  │  └─ slpa_communities.txt
 │  │
 │  └─ Overlapping Algorithms
-│     ├─ Big Clam Algorithm.ipynb
-│     ├─ GenPerm Algorithm.ipynb
-│     ├─ KClique.ipynb
-│     ├─ Label_Propagation.ipynb
-│     └─ Speaker-Listener Label Propagation Algorithm.ipynb
+      ├─ Big Clam Algorithm.ipynb
+      ├─ GenPerm Algorithm.ipynb
+      ├─ KClique.ipynb
+      ├─ Label_Propagation.ipynb
+      └─ Speaker-Listener Label Propagation Algorithm.ipynb
 ```
